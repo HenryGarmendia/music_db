@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #057483;
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    font-weight: 300;
+    padding: 20px 0 5px 0;
+    text-align: center;
+}
+
+/* ===================================
+                SEARCH
+=====================================*/
+#search_artis {
+     padding: 20px;
+}
+
+#search_artis .wrapper {
+    margin: 0 auto;
+}
+
+input {
+    border: 1px solid #d6d6d6;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px 30px;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+:::-webkit-input-placeholder {
+    color: #b8b8b8;
+    text-align: center;
+}
+
+/* ===================================
+                ALBUMS
+=====================================*/
+
+#album_list {
+    margin-top: 50px;
+}
+
+#album_list .album_item {
+    background: #f7f7f7;
+    border-top: 1px solid #dedede;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#album_list .album_item .item_tn {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#album_list .album_item .item_title {
+    font-size: 20px;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+#album_list .album_item .item_price {
+    color: #009588;
+    font-size: 14px;
+    text-align: center
+}
+
+#album_list .album_item a {
+    color: #fff;
+    cursor: pointer;
+    background: #2196f3;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 5px 10px;
+}
