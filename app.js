@@ -40,17 +40,20 @@
         var output = '';
 
         if (obj.results.length > 0) {
+
+            document.querySelector('#no_match').style.display = 'none';
+
             for (let i = 0; i < obj.results.length; i++) {
                 output += '<div class="col-3 album_item">';
-                output +=   '<div class="item_tn" style="background: url();"></div>';
-                output +=   '<div class="item_title">I can\'t destroy</div>';
+                output +=   `<div class="item_tn" style="background: url(${obj.results[i].artworkUrl100});"></div>`;
+                output +=   `<div class="item_title">${obj.results[i].collectionName}</div>`;
                 output +=   '<div class="item_price">';
-                output +=       '<span>Price:</span> 200 USD';
+                output +=       `<span>Price:</span> ${obj.results[i].collectionPrice} ${obj.results[i].currency}`;
                 output +=   '</div>';
-                output +=   '<a href="#" target="_blank">Buy now</a>';
+                output +=   `<a href="${obj.results[i].collectionViewUrl}" target="_blank">Buy now</a>`;
                 output += '</div>';
             }
-            album_list_container = '';
+            album_list_container.innerHTML = '';
             album_list_container.insertAdjacentHTML('afterbegin', output);
         } else {
             // display errors

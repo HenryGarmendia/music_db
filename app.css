@@ -57,8 +57,8 @@ input:focus {
 }
 
 #album_list .album_item .item_tn {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     height: 200px;
     margin: 0 auto;
     width: 200px;
