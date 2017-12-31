@@ -44,13 +44,15 @@
             document.querySelector('#no_match').style.display = 'none';
 
             for (let i = 0; i < obj.results.length; i++) {
-                output += '<div class="col-3 album_item">';
+                output += '<div class="col-3">';
+                output += '<div class="album_item">';
                 output +=   `<div class="item_tn" style="background: url(${obj.results[i].artworkUrl100});"></div>`;
                 output +=   `<div class="item_title">${obj.results[i].collectionName}</div>`;
                 output +=   '<div class="item_price">';
                 output +=       `<span>Price:</span> ${obj.results[i].collectionPrice} ${obj.results[i].currency}`;
                 output +=   '</div>';
                 output +=   `<a href="${obj.results[i].collectionViewUrl}" target="_blank">Buy now</a>`;
+                output += '</div>';
                 output += '</div>';
             }
             album_list_container.innerHTML = '';

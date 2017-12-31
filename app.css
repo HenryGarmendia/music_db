@@ -2,12 +2,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.display-3 i {
+    color: #fd9727;
+}
+
 h2 {
-    color: #057483;
+    color: #fd9727;
     font-family: 'Lobster', cursive;
     font-size: 45px;
     font-weight: 300;
     padding: 20px 0 5px 0;
+    text-shadow: 2px -1px 0px rgba(47, 128, 150, 1);
     text-align: center;
 }
 
@@ -52,6 +57,7 @@ input:focus {
 #album_list .album_item {
     background: #f7f7f7;
     border-top: 1px solid #dedede;
+    margin-bottom: 25px;
     padding: 20px 0;
     text-align: center;
 }
@@ -59,14 +65,15 @@ input:focus {
 #album_list .album_item .item_tn {
     background-size: cover !important;
     background-repeat: no-repeat !important;
+    border-radius: 5px;
     height: 200px;
     margin: 0 auto;
     width: 200px;
 }
 
 #album_list .album_item .item_title {
-    font-size: 20px;
-    padding: 20px 0 10px;
+    font-size: 18px;
+    padding: 20px 10px;
     text-align: center;
 }
 
